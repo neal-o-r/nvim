@@ -11,6 +11,9 @@ local opts = { silent = true }
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- turn on literal tabbing with leader
+keymap("i", "<Shift><Tab>", "<Tab>", opts)
+
 -- Clear highlights
 keymap("n", "\\", "<cmd>nohlsearch<CR>", opts)
 
